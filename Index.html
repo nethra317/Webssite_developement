@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FinEdge - Revolutionizing Cross-Border Payments</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js"></script>
+</head>
+
+<body>
+  <!-- Navigation Bar -->
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About Us</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#contact">Contact Us</a></li>
+    </ul>
+  </nav>
+
+  <!-- Home Section -->
+  <section id="home">
+    <h1>Welcome to FinEdge</h1>
+    <p>Revolutionizing cross-border payments</p>
+    <br><br><br><br><br>
+  </section>
+
+  <!-- About Us Section -->
+  <section id="about">
+    <h2>About Us</h2>
+    <p>FinEdge is a cutting-edge fintech startup dedicated to revolutionizing cross-border payments. Our vision is to enable seamless transactions for individuals and businesses, transcending geographical boundaries.</p>
+  </section>
+
+  <!-- Services Section -->
+  <center><h2>Our Services</h2><br><br></center>
+  <section id="services">
+   
+    <div class="service">
+      <img src="./money tranfer.jpg" width="500px" height="500px" alt="Money Transfer">
+      <h3>Individual Money Transfers</h3>
+      <p>Secure and fast money transfers for individuals.</p>
+    </div>
+    <div class="service">
+      <img src="./business_payment.jpeg" alt="Business Payments">
+      <h3>Business Payments</h3>
+      <p>Efficient payment solutions for businesses.</p>
+    </div>
+    <div class="service">
+      <img src="./payment_tracking.jpeg" alt="Payment Tracking">
+      <h3>Real-time Payment Tracking</h3>
+      <p>Track your payments in real-time for better control.</p>
+    </div>
+  </section>
+
+  <!-- Contact Us Section -->
+  <section id="contact">
+    <h2>Contact Us</h2><br><br>
+    <form>
+      <label for="name">Name</label><br>
+      <input type="text" id="name" name="name" required><br><br>
+
+      <label for="email">Email</label><br>
+      <input type="email" id="email" name="email" required><br><br>
+
+      <label for="message">Message</label><br>
+      <textarea id="message" name="message" required></textarea><br><br>
+
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <script>
+    // JavaScript code for any interactive features
+
+    // Example: Smooth scrolling for anchor links
+    const navLinks = document.querySelectorAll('nav a');
+
+    navLinks.forEach(link => {
+      link.addEventListener('click', e => {
+        e.preventDefault();
+        const targetId = link.getAttribute('href');
+        const targetSection = document.querySelector(targetId);
+
+        window.scrollTo({
+          top: targetSection.offsetTop,
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+</body>
+</html>
